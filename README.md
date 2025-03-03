@@ -1,7 +1,7 @@
 # AIChatEnhancer
 
-![AIChatEnhancer](AI-Chat-Enhacer.png)
 
+<img src="AI-Chat-Enhacer.png" alt="AI-Chat-Enhacer" width="400"/>
 
 **AIChatEnhancer** is an advanced tool designed for **Godot Engine** that enhances chatbot functionality by allowing the integration of custom Node-based functions and tools into the conversation model. This tool empowers developers to add more personalized capabilities to their chatbot by utilizing external functions that can be called during the conversation.
 
