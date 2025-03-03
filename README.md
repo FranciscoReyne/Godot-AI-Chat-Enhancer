@@ -15,7 +15,7 @@ AIChatEnhancer is a tool that enhances AI chat systems by enabling dynamic tool 
 
 1. Clone or download the repository:
    ```
-   git clone https://github.com/yourusername/AIChatEnhancer.git
+   git clone https://github.com/franciscoreyne/AIChatEnhancer.git
    ```
 2. Follow the setup instructions in your Godot project:
    - Place the files in the `addons` folder of your Godot project.
@@ -56,4 +56,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-Feel free to modify the content as needed and remember to replace `yourusername` in the GitHub clone URL.
