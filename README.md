@@ -4,8 +4,9 @@
 
 AIChatEnhancer makes it easy to extend your chat model with real-time function calling, enabling your chatbot to perform actions and access custom functionality during conversations. It allows developers to integrate external systems and logic into the flow of the chat, making it a powerful addition for more dynamic and responsive AI systems.
 
-## Features
+This tool connects directly to chat models like Ollama (or other similar models) via HTTP requests, without requiring additional assets (like GoPilot Utils). However, if you wish to use advanced UI features for managing the model or tools within the Godot editor, you can also install **GoPilot Utils** asset, though it is not required for basic functionality.
 
+## Features
 - Integrates custom functions into chatbot interactions within Godot Engine.
 - Supports tool calls and allows models to use functions as part of the conversation flow.
 - Flexible configuration with the ability to set up the system prompt, tools, and other model parameters.
@@ -13,6 +14,7 @@ AIChatEnhancer makes it easy to extend your chat model with real-time function c
 - Easily extendable with additional tools or modifications.
 - Example tools for illustration and immediate use.
 - Supports model responses with or without system prompt updates.
+
 
 ## Installation
 
