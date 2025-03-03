@@ -1,6 +1,9 @@
 # AIChatEnhancer
 
-**AIChatEnhancer** is an advanced tool designed for **Godot Engine** that enhances chatbot functionality by allowing the integration of custom Node-based functions and tools into the conversation model. This tool empowers developers to add more personalized capabilities to their chatbot by utilizing external functions that can be called during the conversation.
+**AIChatEnhancer** is an advanced tool specifically designed for **Godot Engine** that extends the capabilities of local **Ollama**-based chatbots. It allows seamless integration of custom Node-based functions and tools into the conversation model, providing developers with a powerful and flexible way to enrich chatbot interactions.
+
+With AIChatEnhancer, developers can incorporate external functions that can be dynamically invoked during conversations, enabling further customization of the user experience. From integrating complex logic to triggering custom tools, this tool offers unprecedented control over chatbot interactions within Godot.
+
 
 <p align="center">
   
