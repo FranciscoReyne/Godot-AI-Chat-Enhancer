@@ -1,58 +1,66 @@
 # AIChatEnhancer
-AIChatEnhancer is a tool that enhances AI chat systems by enabling dynamic tool integration and function calls. It supports advanced chat models, customizable system prompts, and optimized performance. Perfect for developers looking to integrate AI with custom tools in Godot.
 
-**AIChatEnhancer** is designed to enhance and extend the functionality of AI chat systems, specifically for integration with tools and custom node functionalities. Built on top of Godot's AI architecture, this project allows for seamless tool interaction and function calling with advanced support for dynamic chat models.
+**AIChatEnhancer** is an advanced tool that enhances chatbot functionality by allowing the integration of custom Node-based functions and tools into the conversation model. It allows developers to add more personalized capabilities to the chat model by utilizing external functions that can be called during the conversation.
 
 ## Features
 
-- **Tool Integration**: Enables AI models to interact dynamically with custom tools and functions.
-- **Enhanced Chat Model Support**: Supports AI models with built-in function calling (e.g., Llama3.1, Mistral Nemo, Hermes3).
-- **Customizable System Prompts**: Easily modify system prompts to optimize AI behavior for specific tasks or use cases.
-- **Optimized Performance**: Incorporates performance enhancements for efficient operation, even in complex tasks.
-- **Interactive Interface**: Provides an intuitive interface for managing tool calls and monitoring AI interactions.
+- Integrates custom functions into chatbot interactions.
+- Supports tool calls and allows models to use functions as part of the conversation flow.
+- Flexible configuration with the ability to set up the system prompt, tools, and other model parameters.
+- Compatible with models like Llama3.1, Mistral Nemo, and more that support tool-based interaction.
+- Easily extendable with additional tools or modifications.
+- Example tools for illustration and immediate use.
+- Supports model responses with or without system prompt updates.
 
 ## Installation
 
-1. Clone or download the repository:
-   ```
-   git clone https://github.com/franciscoreyne/AIChatEnhancer.git
-   ```
-2. Follow the setup instructions in your Godot project:
-   - Place the files in the `addons` folder of your Godot project.
-   - Enable the plugin from the **Editor Settings** in Godot.
+To integrate **AIChatEnhancer** into your Godot project, follow these steps:
+
+1. Clone this repository or download the `ai_chat_enhancer.gd` script to your project.
+2. Add the script as a Node or attach it to your desired Node in the scene.
+3. Configure the `target_node`, `tools`, and other parameters to match your specific needs.
+4. Customize the `tool_examples` for the tools you wish to integrate into the model.
 
 ## Usage
 
-Once installed, you can use **AIChatEnhancer** to enhance your AI chat systems. To start, instantiate the `ToolChatRequester` in your scene and configure the available tools.
+To use **AIChatEnhancer**, create a new instance of the script and assign the target Node on which the model should call functions. You can then provide a list of tools that the model can call during the conversation.
 
-### Example:
-```gdscript
-var chat_requester = ToolChatRequester.new()
-chat_requester.target_node = $YourNode
-chat_requester.tools = [your_tool_1, your_tool_2]
+### Example Usage:
+
+```gd
+# Inside your main script
+
+var chat_enhancer = AIChatEnhancer.new()
+chat_enhancer.target_node = your_target_node  # Node where functions are executed
+chat_enhancer.tools = your_tools  # List of tools that the model can call
 ```
 
-### API:
-- `set_tool_active(function_name:String, active:bool)` – Set a specific tool's availability.
-- `generate(prompt:String)` – Generate AI responses based on the current conversation.
-- `call_tools(_tools:PackedStringArray, instruction:String)` – Call specific tools with instructions.
+You can add tool examples to help the model understand how to interact with these tools.
+
+## Configuration
+
+- **`target_node`**: The Node that will execute the functions that the model calls during the conversation.
+- **`tools`**: An array of `ChatTool` instances, each representing a function the model can use.
+- **`built_in_tool_support`**: If set to `true`, the model will process tool calls as built-in capabilities.
+- **`tool_examples`**: A list of example interactions that can help train the model on how to use the tools.
 
 ## Contributing
 
-Feel free to fork this repository and submit pull requests with enhancements, bug fixes, or new features. Make sure to follow the [Code of Conduct](CODE_OF_CONDUCT.md) and ensure your changes are well-tested.
+Feel free to fork this repository, submit issues, and create pull requests to contribute to the project. Contributions are welcome for bug fixes, new features, and improvements.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
-- Thanks to the Godot Engine for providing the framework for this tool.
-- Special thanks to the AI models and communities that made this project possible.
+- This project leverages Godot's powerful scripting capabilities and integrates AI-based tool calling.
+- Inspired by other advanced chatbot systems that integrate function calling and tool utilization.
+
+## Contact
+
+If you have any questions or suggestions, feel free to reach out or open an issue on GitHub.
 
 ---
 
-**AIChatEnhancer** is a flexible and powerful tool for creating advanced AI systems within the Godot engine. It’s ideal for developers looking to integrate custom AI tools or extend the capabilities of their chatbots.
-
----
-
+**AIChatEnhancer** is a tool designed to give your chatbot the power to extend its functionality beyond basic conversation, enabling more advanced use cases and seamless interaction with your custom tools and systems.
