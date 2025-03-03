@@ -1,12 +1,6 @@
 # AIChatEnhancer
 AIChatEnhancer is a tool that enhances AI chat systems by enabling dynamic tool integration and function calls. It supports advanced chat models, customizable system prompts, and optimized performance. Perfect for developers looking to integrate AI with custom tools in Godot.
 
-
-¡Con gusto! Aquí tienes un `README.md` actualizado para tu repositorio de **AIChatEnhancer**:
-
-```markdown
-# AIChatEnhancer
-
 **AIChatEnhancer** is a powerful tool designed to enhance and extend the functionality of AI chat systems, specifically for integration with tools and custom node functionalities. Built on top of Godot's AI architecture, this project allows for seamless tool interaction and function calling with advanced support for dynamic chat models.
 
 ## Features
